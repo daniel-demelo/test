@@ -27,6 +27,7 @@ from your command line. You can check this by simply running:
 
 .. code-block:: bash
     $ python --version
+    
 You should get some output like ``3.6.2``. If you do not have Python, please
 install the latest 3.x version from `python.org`_ or refer to the
 `Installing Python`_ section of this guide.
