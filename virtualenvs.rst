@@ -41,6 +41,7 @@ install the latest 3.x version from `python.org`_ or refer to the
         Traceback (most recent call last):
           File "<stdin>", line 1, in <module>
         NameError: name 'python' is not defined
+        
     It's because this command is intended to be run in a *shell* (also called
     a *terminal* or *console*). See the Python for Beginners
     `getting started tutorial`_ for an introduction to using your operating
@@ -50,7 +51,9 @@ Additionally, you'll need to make sure you have `pip`_ available. You can
 check this by running:
 
 .. code-block:: bash
+
     $ pip --version
+    
 If you installed Python from source, with an installer from `python.org`_, or
 via `Homebrew`_ you should already have pip. If you're on Linux and installed
 using your OS package manager, you may have to `install pip <https://pip.pypa.io/en/stable/installing/>`_ separately.
@@ -117,6 +120,7 @@ tutorial) and run:
 
     $ cd myproject
     $ pipenv install requests
+    
 Pipenv will install the excellent `Requests`_ library and create a ``Pipfile``
 for you in your project's directory. The `Pipfile`_ is used to track which
 dependencies your project needs in case you need to re-install them, such as
@@ -166,11 +170,13 @@ use it:
     import requests
     response = requests.get('https://httpbin.org/ip')
     print('Your IP is {0}'.format(response.json()['origin']))
+    
 Then you can run this script using ``pipenv run``:
 
 .. code-block:: bash
 
     $ pipenv run python main.py
+    
 You should get output similar to this:
 
 .. code-block:: text
