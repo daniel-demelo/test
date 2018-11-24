@@ -37,10 +37,10 @@ install the latest 3.x version from `python.org`_ or refer to the
 
     .. code-block:: python
     
-        >>> python
-        Traceback (most recent call last):
-          File "<stdin>", line 1, in <module>
-        NameError: name 'python' is not defined
+        $ python
+        $ Traceback (most recent call last):
+        $   File "<stdin>", line 1, in <module>
+        $ NameError: name 'python' is not defined
         
     It's because this command is intended to be run in a *shell* (also called
     a *terminal* or *console*). See the Python for Beginners
@@ -167,9 +167,9 @@ use it:
 
 .. code-block:: python
 
-    import requests
-    response = requests.get('https://httpbin.org/ip')
-    print('Your IP is {0}'.format(response.json()['origin']))
+    $ import requests
+    $ response = requests.get('https://httpbin.org/ip')
+    $ print('Your IP is {0}'.format(response.json()['origin']))
     
 Then you can run this script using ``pipenv run``:
 
