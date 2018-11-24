@@ -26,6 +26,7 @@ Before you go any further, make sure you have Python and that it's available
 from your command line. You can check this by simply running:
 
 .. code-block:: bash
+
     $ python --version
     
 You should get some output like ``3.6.2``. If you do not have Python, please
@@ -35,6 +36,7 @@ install the latest 3.x version from `python.org`_ or refer to the
 .. Note:: If you're newcomer and you get an error like this:
 
     .. code-block:: python
+    
         >>> python
         Traceback (most recent call last):
           File "<stdin>", line 1, in <module>
@@ -112,6 +114,7 @@ change into your project's directory (or just an empty directory for this
 tutorial) and run:
 
 .. code-block:: bash
+
     $ cd myproject
     $ pipenv install requests
 Pipenv will install the excellent `Requests`_ library and create a ``Pipfile``
@@ -159,12 +162,14 @@ Now that Requests is installed you can create a simple ``main.py`` file to
 use it:
 
 .. code-block:: python
+
     import requests
     response = requests.get('https://httpbin.org/ip')
     print('Your IP is {0}'.format(response.json()['origin']))
 Then you can run this script using ``pipenv run``:
 
 .. code-block:: bash
+
     $ pipenv run python main.py
 You should get output similar to this:
 
