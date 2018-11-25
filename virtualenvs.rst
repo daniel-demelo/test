@@ -109,6 +109,56 @@ Use ``pip`` to install Pipenv:
 .. _modifying ~/.profile: https://stackoverflow.com/a/14638025
 .. _Control Panel: https://msdn.microsoft.com/en-us/library/windows/desktop/bb776899(v=vs.85).aspx
 
+Installing packages for your project
+------------------------------------
+
+Pipenv manages dependencies on a per-project basis. To install packages,
+change into your project's directory (or just an empty directory for this
+tutorial) and run:
+
+.. code-block:: bash
+
+    $ cd myproject
+    $ pipenv install requests
+
+Pipenv will install the excellent `Requests`_ library and create a ``Pipfile``
+for you in your project's directory. The `Pipfile`_ is used to track which
+dependencies your project needs in case you need to re-install them, such as
+when you share your project with others. You should get output similar to this
+(although the exact paths shown will vary):
+
+.. _Pipfile: https://github.com/pypa/pipfile
+
+.. code-block:: text
+
+    Creating a Pipfile for this project...
+    Creating a virtualenv for this project...
+    Using base prefix '/usr/local/Cellar/python3/3.6.2/Frameworks/Python.framework/Versions/3.6'
+    New python executable in ~/.local/share/virtualenvs/tmp-agwWamBd/bin/python3.6
+    Also creating executable in ~/.local/share/virtualenvs/tmp-agwWamBd/bin/python
+    Installing setuptools, pip, wheel...done.
+
+    Virtualenv location: ~/.local/share/virtualenvs/tmp-agwWamBd
+    Installing requests...
+    Collecting requests
+      Using cached requests-2.18.4-py2.py3-none-any.whl
+    Collecting idna<2.7,>=2.5 (from requests)
+      Using cached idna-2.6-py2.py3-none-any.whl
+    Collecting urllib3<1.23,>=1.21.1 (from requests)
+      Using cached urllib3-1.22-py2.py3-none-any.whl
+    Collecting chardet<3.1.0,>=3.0.2 (from requests)
+      Using cached chardet-3.0.4-py2.py3-none-any.whl
+    Collecting certifi>=2017.4.17 (from requests)
+      Using cached certifi-2017.7.27.1-py2.py3-none-any.whl
+    Installing collected packages: idna, urllib3, chardet, certifi, requests
+    Successfully installed certifi-2017.7.27.1 chardet-3.0.4 idna-2.6 requests-2.18.4 urllib3-1.22
+
+    Adding requests to Pipfile's [packages]...
+    P.S. You have excellent taste! ✨ 🍰 ✨
+
+.. _Requests: https://python-requests.org
+
+
 virtualenv
 ----------
 
