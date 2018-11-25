@@ -197,8 +197,8 @@ Congratulations, you now know how to install and use Python packages! ✨ 🍰 �
 
 
 
-virtualenv
-----------
+Lower level: virtualenv
+=======================
 
 `virtualenv <http://pypi.python.org/pypi/virtualenv>`_ is a tool to create
 isolated Python environments. virtualenv creates a folder which contains all the
@@ -314,7 +314,7 @@ This can help ensure consistency across installations, across deployments,
 and across developers.
 
 Lastly, remember to exclude the virtual environment folder from source
-control by adding it to the ignore list.
+control by adding it to the ignore list (see :ref:`Version Control Ignores<version_control_ignores>`).
 
 .. _virtualenvwrapper-ref:
 
