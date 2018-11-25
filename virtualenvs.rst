@@ -5,13 +5,18 @@ Pipenv & Virtual Environments
 
 .. image:: /_static/photos/35294660055_42c02b2316_k_d.jpg
 
-A Virtual Environment is a tool to keep the dependencies required by different
-projects in separate places, by creating virtual Python environments for them.
-It solves the "Project X depends on version 1.x but, Project Y needs 4.x"
-dilemma, and keeps your global site-packages directory clean and manageable.
+This tutorial walks you through installing and using Python packages.
 
-For example, you can work on a project which requires Django 1.10 while also
-maintaining a project which requires Django 1.8.
+It will show you how to install and use the necessary tools and make strong
+recommendations on best practices. Keep in mind that Python is used for a great
+many different purposes, and precisely how you want to manage your dependencies
+may change based on how you decide to publish your software. The guidance
+presented here is most directly applicable to the development and deployment of
+network services (including web applications), but is also very well suited to
+managing development and testing environments for any kind of project.
+
+.. Note:: This guide is written for Python 3, however, these instructions
+    should work fine on Python 2.7—if you are still using it, for some reason.
 
 
 Pipenv
