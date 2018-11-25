@@ -285,7 +285,7 @@ littered across your system, and its possible you'll forget their names or
 where they were placed.
 
 Other Notes
-~~~~~~~~~~~
+-----------
 
 Running ``virtualenv`` with the option ``--no-site-packages`` will not
 include the packages that are installed globally. This can be useful
@@ -346,7 +346,7 @@ To install (make sure **virtualenv** is already installed):
 In Windows, the default path for WORKON_HOME is %USERPROFILE%\Envs
 
 Basic Usage
-~~~~~~~~~~~
+-----------
 
 1. Create a virtual environment:
 
@@ -390,7 +390,7 @@ can quickly switch between environments.
    $ rmvirtualenv venv
 
 Other useful commands
-~~~~~~~~~~~~~~~~~~~~~
+---------------------
 
 ``lsvirtualenv``
   List all of the environments.
@@ -430,4 +430,3 @@ And on Linux:
 
    $ git clone git://github.com/kennethreitz/autoenv.git ~/.autoenv
    $ echo 'source ~/.autoenv/activate.sh' >> ~/.bashrc
-
