@@ -19,6 +19,52 @@ managing development and testing environments for any kind of project.
     should work fine on Python 2.7—if you are still using it, for some reason.
 
 
+Make sure you've got Python & pip
+---------------------------------
+
+Before you go any further, make sure you have Python and that it's available
+from your command line. You can check this by simply running:
+
+.. code-block:: bash
+
+    $ python --version
+
+You should get some output like ``3.6.2``. If you do not have Python, please
+install the latest 3.x version from `python.org`_ or refer to the
+`Installing Python`_ section of this guide.
+
+.. Note:: If you're newcomer and you get an error like this:
+
+    .. code-block:: python
+
+        >>> python
+        Traceback (most recent call last):
+          File "<stdin>", line 1, in <module>
+        NameError: name 'python' is not defined
+
+    It's because this command is intended to be run in a *shell* (also called
+    a *terminal* or *console*). See the Python for Beginners
+    `getting started tutorial`_ for an introduction to using your operating
+    system's shell and interacting with Python.
+
+Additionally, you'll need to make sure you have `pip`_ available. You can
+check this by running:
+
+.. code-block:: bash
+
+    $ pip --version
+
+If you installed Python from source, with an installer from `python.org`_, or
+via `Homebrew`_ you should already have pip. If you're on Linux and installed
+using your OS package manager, you may have to `install pip <https://pip.pypa.io/en/stable/installing/>`_ separately.
+
+.. _getting started tutorial: https://opentechschool.github.io/python-beginners/en/getting_started.html#what-is-python-exactly
+.. _python.org: https://python.org
+.. _pip: https://pypi.org/project/pip/
+.. _Homebrew: https://brew.sh
+.. _Installing Python: https://docs.python-guide.org/starting/installation/
+
+
 Pipenv
 ------
 
