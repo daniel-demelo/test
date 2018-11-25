@@ -219,7 +219,7 @@ Test your installation
    $ virtualenv --version
 
 Basic Usage
-~~~~~~~~~~~
+-----------
 
 1. Create a virtual environment for a project:
 
