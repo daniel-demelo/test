@@ -3,6 +3,8 @@
 Pipenv & Virtual Environments
 =============================
 
+.. image:: /_static/photos/35294660055_42c02b2316_k_d.jpg
+
 A Virtual Environment is a tool to keep the dependencies required by different
 projects in separate places, by creating virtual Python environments for them.
 It solves the "Project X depends on version 1.x but, Project Y needs 4.x"
