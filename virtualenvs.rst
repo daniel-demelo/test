@@ -159,6 +159,44 @@ when you share your project with others. You should get output similar to this
 .. _Requests: https://python-requests.org
 
 
+Using installed packages
+------------------------
+
+Now that Requests is installed you can create a simple ``main.py`` file to
+use it:
+
+.. code-block:: python
+
+    import requests
+
+    response = requests.get('https://httpbin.org/ip')
+
+    print('Your IP is {0}'.format(response.json()['origin']))
+
+Then you can run this script using ``pipenv run``:
+
+.. code-block:: bash
+
+    $ pipenv run python main.py
+
+You should get output similar to this:
+
+.. code-block:: text
+
+    Your IP is 8.8.8.8
+
+Using ``$ pipenv run`` ensures that your installed packages are available to
+your script. It's also possible to spawn a new shell that ensures all commands
+have access to your installed packages with ``$ pipenv shell``.
+
+
+Next steps
+----------
+
+Congratulations, you now know how to install and use Python packages! ✨ 🍰 ✨
+
+
+
 virtualenv
 ----------
 
