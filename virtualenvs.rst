@@ -65,20 +65,49 @@ using your OS package manager, you may have to `install pip <https://pip.pypa.io
 .. _Installing Python: https://docs.python-guide.org/starting/installation/
 
 
-Pipenv
-------
+Installing Pipenv
+-----------------
 
-**Pipenv** is a project that aims to bring the best of all packaging worlds to the Python world. It harnesses `Pipfile <https://github.com/pypa/pipfile>`_, `pip <https://github.com/pypa/pip>`_, and `virtualenv <https://github.com/pypa/virtualenv>`_ into one single toolchain. It features very pretty terminal colors.
+`Pipenv`_ is a dependency manager for Python projects. If you're familiar
+with Node.js' `npm`_ or Ruby's `bundler`_, it is similar in spirit to those
+tools. While `pip`_ can install Python packages, Pipenv is recommended as
+it's a higher-level tool that simplifies dependency management for common use
+cases.
 
-It automatically creates and manages a virtualenv for your projects, as well as adds/removes packages from your ``Pipfile`` as you install/uninstall packages. The ``lock`` command generates a lockfile (``Pipfile.lock``).
+Use ``pip`` to install Pipenv:
+
+.. code-block:: console
+
+    $ pip install --user pipenv
 
 
-Install Pipenv with pip::
+.. Note:: This does a `user installation`_ to prevent breaking any system-wide
+    packages. If ``pipenv`` isn't available in your shell after installation,
+    you'll need to add the `user base`_'s binary directory to your ``PATH``.
 
-    $ pip install pipenv
-    ✨🍰✨
+    On Linux and macOS you can find the user base binary directory by running
+    ``python -m site --user-base`` and adding ``bin`` to the end. For example,
+    this will typically print ``~/.local`` (with ``~`` expanded to the
+    absolute path to your home directory) so you'll need to add
+    ``~/.local/bin`` to your ``PATH``. You can set your ``PATH`` permanently by
+    `modifying ~/.profile`_.
 
+    On Windows you can find the user base binary directory by running
+    ``py -m site --user-site`` and replacing ``site-packages`` with
+    ``Scripts``. For example, this could return
+    ``C:\Users\Username\AppData\Roaming\Python36\site-packages`` so you would
+    need to set your ``PATH`` to include
+    ``C:\Users\Username\AppData\Roaming\Python36\Scripts``. You can set your
+    user ``PATH`` permanently in the `Control Panel`_. You may need to log
+    out for the ``PATH`` changes to take effect.
 
+.. _Pipenv: https://docs.pipenv.org/
+.. _npm: https://www.npmjs.com/
+.. _bundler: http://bundler.io/
+.. _user base: https://docs.python.org/3/library/site.html#site.USER_BASE
+.. _user installation: https://pip.pypa.io/en/stable/user_guide/#user-installs
+.. _modifying ~/.profile: https://stackoverflow.com/a/14638025
+.. _Control Panel: https://msdn.microsoft.com/en-us/library/windows/desktop/bb776899(v=vs.85).aspx
 
 virtualenv
 ----------
